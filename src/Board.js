@@ -27,12 +27,17 @@ import "./Board.css";
  *
  **/
 
-function Board({ nrows, ncols, chanceLightStartsOn }) {
+function Board({ nrows = 5, ncols = 5, chanceLightStartsOn = .25 }) {
   const [board, setBoard] = useState(createBoard());
 
   /** create a board nrows high/ncols wide, each cell randomly lit or unlit */
   function createBoard() {
-    let initialBoard = [];
+    let initialBoard = [...Array(nrows)].map(
+      r => [...Array(ncols)].map(
+        (c) => Math.random() < chanceLightStartsOn
+          ? true
+          : false));
+
     // TODO: create array-of-arrays of true/false values
     return initialBoard;
   }
@@ -40,6 +45,7 @@ function Board({ nrows, ncols, chanceLightStartsOn }) {
   function hasWon() {
     // TODO: check the board in state to determine whether the player has won.
   }
+
 
   function flipCellsAround(coord) {
     setBoard(oldBoard => {
@@ -66,6 +72,21 @@ function Board({ nrows, ncols, chanceLightStartsOn }) {
   // TODO
 
   // make table board
+
+  // for each item in row, for each item in col => render cell(flipCellsAroundMe, isLit )
+
+  return (
+    <div className="board">
+      {
+        board.map(
+          (row, i) =>
+            <div> {row.map(
+              (cell, j) => <Cell key={i + '-' + j} isLit={board[i][j]} flipCellsAroundMe={() => flipCellsAround(i + '-' + j)} />)}
+
+            </div>)
+      }
+
+    </div>);
 
   // TODO
 }
