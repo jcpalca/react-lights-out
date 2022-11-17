@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests Board renders snapshot 1`] = `
+<div>
+  <table
+    class="board"
+  >
+    <tbody>
+      <tr>
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+      </tr>
+      <tr>
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+      </tr>
+      <tr>
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+      </tr>
+      <tr>
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+      </tr>
+      <tr>
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+        <td
+          class="Cell Cell-lit"
+        />
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
